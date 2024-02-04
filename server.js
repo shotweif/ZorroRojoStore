@@ -5,7 +5,7 @@ const path = require('path');
 //const { get } = require('https');
 
 // Firebase admin setup -----------------------------
-let serviceAccount = require("./zorrorojos-firebase-adminsdk-lpkoj-272b88c8e7.json");
+let serviceAccount = require("./zorrorojos-firebase.json");
 
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccount)
