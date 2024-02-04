@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zorro Rojo Store - Inicio</title>
+    <link rel="icon" href="img/logo/isotipo.svg">
+    <link rel="stylesheet" href="css/booking.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- Navegation-Bar -->
+    <nav class="navbar"></nav>
+    <div class="nav-search"></div>
+
+    <div class="loader">
+        <img src="img/comp/loading-78-unscreen.gif" alt="">
+    </div>
+    <div class="alert-box">
+        <img src="../img/comp/bxs-error.svg" class="alert-img image-show" alt="">
+        <img src="../img/comp/bx-check.svg" class="alert-img" alt="">
+        <p class="alert-msg">Error message</p>
+    </div>
+
+    <!-- form container -->
+    <div class="form-booking-container">
+
+        <div class="form-container">
+            
+            <div class="welcom">
+                <img src="img/sazu-su.jpg" class="logo" alt="">
+                <p class="text-page">Te damos la bien venida a Zorro Rojo Store.
+                    <br>
+                    Aqui puedes hacer la reserva para confeccionar tu traje.</p>
+            </div>
+
+            <div class="line-container">
+                <h3 class="form-title">Reserva ya!</h3>
+                <button class="btn-mine">Mis datos</button>
+            </div>
+            <input type="text" id="name" placeholder="Nombre*">
+            <input type="email" id="email" placeholder="Email*">
+            <input type="text" id="number" placeholder="Telefono*">
+            <textarea id="description" placeholder="Breve descripción del pedido."></textarea>
+            
+            <div class="data-sec">
+                <h4>Reservaciones:</h4>
+                <form action="#" class="data-free-list">
+                    <select class="data-selext-btn" name="Data-month" id="data-list">
+                    </select>
+              </form>               
+
+            </div>
+
+            <div class="order-type">
+                <h4>Tipo de medida:</h4>
+
+                <input class="" type="radio" name="size" value="s" hidden id="size-p">
+                <label for="size-p" class="size-btn check">A medida</label>
+
+                <input type="radio" name="size" value="m" hidden id="size-e">
+                <label for="size-e" class="size-btn">Medidas estándar</label>
+                
+
+            </div>
+            
+            <div class="booking-pay">
+                <h4>Forma de pago:</h4>
+
+                <input type="radio" name="pay" value="d" hidden id="pay-d">
+                <label for="pay-d" class="pay-btn check">Deposito</label>
+
+                <input type="radio" name="pay" value="t" hidden id="pay-t">
+                <label for="pay-t" class="pay-btn">Transferencia</label>
+                
+                <input type="radio" name="pay" value="e" hidden id="pay-e">
+                <label for="pay-e" class="pay-btn">Efectivo</label>
+
+            </div>
+
+            <input type="checkbox" class="checkbox" id="terms-and-condition" checked>
+            <label for="terms-and-condition">Acepta nuestros <a href="/temsandConditions">terminos y condiciones.</a> </label>
+            <br>
+
+            <button class="submit-btn">Enviar reserva</button>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer"></footer>
+
+    <!-- Scripts -->
+    <script src="js/nav&foot/nav.js"></script>
+    <script src="js/nav&foot/foot.js"></script>
+    <script src="js/token.js"></script>
+    <script src="js/form2.js"></script>
+</body>
+
+</html>

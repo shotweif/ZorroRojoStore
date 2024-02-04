@@ -1,0 +1,59 @@
+@import 'nav&foot/nav.css';
+@import 'nav&foot/foot.css';
+@import 'nav&foot/scroll.css';
+@import 'card_small.css';
+
+:root{
+    --color-base1: #161616;
+    --color-sub-base1: #f1f1f1;
+    --color-sub-base2: #e66612;
+    --border-radius: 5px;
+}
+body{
+    background: #f3f3f3;
+}
+.search-results{
+    width: 100%;
+    min-height: 60vh;
+    padding: 6px 10%;
+    margin-top: 7rem;
+}
+.heading{
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin-bottom: 20px;
+    padding: 0 5vh;
+}
+
+.heading span{
+    font-weight: 700;
+}
+
+.product-container{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    margin-bottom: 5rem;
+}
+.product-card{
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+}
+.product-image{
+    width: 150px;
+    height: 10rem;
+}
+/*---------------------------------*/
+        /*--- Resolution ---*/
+/*---------------------------------*/
+
+/* BREAKPOINT */
+@media (max-width: 1030px){
+    .search-results{
+        padding: 6px 2%;
+    }
+}

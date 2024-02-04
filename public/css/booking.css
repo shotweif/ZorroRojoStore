@@ -1,0 +1,88 @@
+@import 'products.css';
+@import 'signup.css';
+@import 'nav&foot/foot.css';
+
+.form-booking-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 91vh;
+}
+.form-container{
+    width: 700px;
+    margin: 75px 20px;
+
+}
+.welcom{
+    display: block;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.logo{
+    min-width: 15vh;
+    min-height: 15vh;
+    max-width: 15vh;
+    max-height: 15vh;
+    object-fit: cover;
+    object-position: 36%;
+    border-radius: 50%;
+    margin-right: 20px;
+    
+}
+.line-container{
+    margin-top: 30px;
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.text-page{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #e66612;
+}
+.booking-pay, .order-type, .data-sec{
+    margin: 30px 0;
+}
+
+.size-btn, .pay-btn, .data-selext-btn{
+    border-radius: 10px;
+    width: auto;
+    height: 50px;
+    font-size: 15px;
+    line-height: 50px;
+    padding: 0 10px;
+}
+.data-selext-btn{
+    width: 60%;
+}
+option{
+    text-align: center;
+}
+.btn-mine{
+    border-radius: 10px;
+    height: 30px;
+    padding: 5px;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    transition: .3S;
+}
+.data-active{
+    background: #ec853f;
+    color: #fff;
+}
+textarea {
+    width: 100%;
+    height: 100px;
+    resize: none;
+    padding: 10px 20px;
+}
+textarea::placeholder{
+    color: #b8b8b8;
+}

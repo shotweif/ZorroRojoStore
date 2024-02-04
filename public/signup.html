@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zorro Rojo Store - signup </title>
+    <link rel="icon" href="img/logo/isotipo.svg">
+    <link rel="stylesheet" href="css/signup.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body class="container">
+    <!-- Navegation-Bar -->
+    <nav class="navbar"></nav>
+    <div class="nav-search"></div>
+
+    <div class="loader">
+        <img src="img/comp/loading-78-unscreen.gif" alt="">
+    </div>
+    <div class="alert-box ">
+        <img src="img/comp/bxs-error.svg" class="alert-img" alt="">
+        <p class="alert-msg">Error message</p>
+    </div>
+
+    <div class="container-back-sinup">
+        <div class="form-container">
+            <h1 class="title-page">Signup</h1>
+            <p class="text-page">Bienvenido! Crea tu cuenta aqui.</p>
+            <input type="text" id="name" placeholder="Nombre*">
+            <input type="email" id="email" placeholder="Email*">
+            <input type="text" id="number" placeholder="Telefono">
+            <input type="password" id="password" placeholder="Contraseña*">
+            <input type="password" id="password-conf" placeholder="Confirmar contraseña*">
+
+            <input type="checkbox" class="checkbox" id="terms-and-condition" checked>
+            <label for="terms-and-condition">Acepta nuestros <a href="/temsandConditions">terminos y condiciones.</a> </label>
+            <br>
+            <input type="checkbox" class="checkbox" id="remember-me">
+            <label for="remember-me">Recordar sesion</label>
+            <br>
+
+            <button class="submit-btn">Crear cuenta</button>
+            <p class="mini-text"> Si ya tienes cuenta <a href="/login">Iniciar sesión</a></p>
+        </div>
+    </div>
+
+
+    <!-- Scripts -->
+    <script src="js/nav&foot/nav.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/token.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zorro Rojo Store - Add Product</title>
+    <link rel="icon" href="../img/logo/isotipo.svg">
+    <link rel="stylesheet" href="../css/bookingCreate.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+
+    <div class="loader">
+        <img src="../img/comp/loading-78-unscreen.gif" alt="">
+    </div>
+    <div class="alert-box">
+        <img src="../img/comp/bxs-error.svg" class="alert-img" alt="">
+        <p class="alert-msg">Error message</p>
+    </div>
+
+    <img src="../img/logo/isotipo-t.svg" class="logo" alt="ZorroRojoStore">
+    <div class="form">
+        <h1 class="Title"> Zorro Rojo Store </h1>
+        <!-- Product image -->
+        <div class="product-info">
+            
+            <div class="select-sizes">
+                <p class="text"> <i class='bx bxs-calendar-edit'></i></button> Calendario</p>
+                <p class="text-min ">Aqui puedes seleccionar las fechas en las que deseas abrir el calendario de reservas.</p>
+                <div class="size">
+                    <input type="checkbox" class="size-checkbox" id="ene" value="Enero">
+                    <input type="checkbox" class="size-checkbox" id="feb" value="Febrero">
+                    <input type="checkbox" class="size-checkbox" id="mar" value="Marzo">
+                    <input type="checkbox" class="size-checkbox" id="abr" value="Abril">
+                    <input type="checkbox" class="size-checkbox" id="may" value="Mayo">
+                    <input type="checkbox" class="size-checkbox" id="jun" value="Junio">
+                    <input type="checkbox" class="size-checkbox" id="jul" value="Julio">
+                    <input type="checkbox" class="size-checkbox" id="ago" value="Agosto">
+                    <input type="checkbox" class="size-checkbox" id="sep" value="Septiembre">
+                    <input type="checkbox" class="size-checkbox" id="oct" value="Octubre">
+                    <input type="checkbox" class="size-checkbox" id="nov" value="Noviembre">
+                    <input type="checkbox" class="size-checkbox" id="dic" value="Diciembre">
+                </div>
+            </div>
+        </div>
+
+        <div class="product-price">
+            <div class="n1">
+                <p class="text-lin">Reservas por mes</p>
+                <input type="number" id="actual-price" placeholder="Reservas">
+            </div>
+            <div class="n2">
+                <p class="text-lin">Reservas Tomadas</p>
+                <input type="number" id="discount" placeholder="Tomados" value="0">
+            </div>
+            <div class="n3">
+                <p class="text-lin">Reservas Libres</p>
+                <input type="number" id="sell-price" placeholder="Libres" disabled>
+            </div>
+        </div>    
+        
+        <div class="box-booking-ctive">
+            <div class="date-active" >
+                <h3 class="date-act-name center-line">Fechas activas</h3>
+                <div class="date-active-list" id="date-select">
+                </div>
+            </div>
+            <div class="date-active" >
+                <h3 class="date-act-name title-line">Turnos disponibles</h3>
+                <div class="date-active-list" id="booking-num">
+                </div>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button class="btn" id="add-btn">Guardae</button>
+            <button class="btn" id="canel-btn">Atras</button>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="../js/token.js"></script>
+    <script src="../js/adminBookingData.js"></script>
+    <!--script type="module" src="../js/addProduct.js"></script-->
+    
+</body>
+
+</html>

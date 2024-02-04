@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zorro Rojo Store - Add Product</title>
+    <link rel="icon" href="img/logo/isotipo.svg">
+    <link rel="stylesheet" href="../css/addProduct.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+
+    <div class="loader">
+        <img src="img/comp/loading-78-unscreen.gif" alt="">
+    </div>
+    <div class="alert-box">
+        <img src="../img/comp/bxs-error.svg" class="alert-img" alt="">
+        <p class="alert-msg">Error message</p>
+    </div>
+
+    <img src="../img/logo/isotipo-t.svg" class="logo" alt="ZorroRojoStore">
+    <div class="form">
+        <input type="text" id="product-name" maxlength="50" placeholder="Nombre del producto">
+        <input type="text" id="short-des" placeholder="Corta descripcion del producto">
+        <textarea name="" id="des" placeholder="Descripcion detallada"></textarea>
+
+        <!-- Product image -->
+        <div class="product-info">
+            <div class="product-image">
+                <i class='bx bxs-file-image'></i>
+                <!--p class="text">Imagendel producto</p-->
+            </div>
+            <div class="upload-image-sec">
+                <!-- upload input -->
+                <p class="text"><img src="../img/comp/bxs-camera-plus.svg" alt="">Subir imagen</p>
+                <div class="upload-catalouge">
+                    <input type="file" class="fileupload" id="first-file-upload" hidden>
+                    <label for="first-file-upload" class="upload-image"></label>
+
+                    <input type="file" class="fileupload" id="second-file-upload" hidden>
+                    <label for="second-file-upload" class="upload-image"></label>
+
+                    <input type="file" class="fileupload" id="third-file-upload" hidden>
+                    <label for="third-file-upload" class="upload-image"></label>
+
+                    <input type="file" class="fileupload" id="fourth-file-upload" hidden>
+                    <label for="fourth-file-upload" class="upload-image"></label>
+                </div>
+            </div>
+            <div class="select-sizes">
+                <p class="text"><img src="img/comp/bxs-ruler.svg" alt="">Tallas del traje</p>
+                <div class="size">
+                    <input type="checkbox" class="size-checkbox" id="xs" value="XS">
+                    <input type="checkbox" class="size-checkbox" id="s" value="S">
+                    <input type="checkbox" class="size-checkbox" id="l" value="L">
+                    <input type="checkbox" class="size-checkbox" id="m" value="M">
+                    <input type="checkbox" class="size-checkbox" id="xl" value="XL">
+                    <input type="checkbox" class="size-checkbox" id="xxl" value="XXL">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="product-price">
+            <input type="number" id="actual-price" placeholder="Precio actial">
+            <input type="number" id="discount" placeholder="Descuento">
+            <input type="number" id="sell-price" placeholder="Precio de venta">
+        </div>
+
+        <input type="number" id="stock" min="1" placeholder="stock">
+        <textarea id="tags"
+            placeholder="Agrega una categoria, Por ejemplo - Mujer, guantes, chaquetas, animer, videojuego, otros."></textarea>
+        <input type="checkbox" class="checkbox" id="tac" checked>
+        <label for="tac" class="tac-color">El 10% del total de la venta es la ganancia.</label>
+
+        <div class="buttons">
+            <button class="btn" id="add-btn">Agregar</button>
+            <button class="btn" id="save-btn">Guardar borrador</button>
+            <button class="btn" id="canel-btn">Cancelar</button>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="../js/token.js"></script>
+
+    <script type="module" src="../js/createProduct.js"></script>
+    <script type="module" src="../js/addProduct.js"></script>
+    
+</body>
+
+</html>

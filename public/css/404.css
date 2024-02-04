@@ -1,0 +1,37 @@
+@import 'nav&foot/nav.css';
+@import 'nav&foot/foot.css';
+@import 'nav&foot/scroll.css';
+
+:root{
+    --color-base1: #161616;
+    --color-sub-base1: #f1f1f1;
+    --color-sub-base2: #e66612;
+    --border-radius: 5px;
+}
+
+body{
+    background: #f3f3f3;
+}
+
+.four-0-four-container{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 50vh;
+    margin: 10rem 0;
+}
+.four_cero_for_image{
+    display: block;
+    margin: 50px auto;
+    width: 30vh;
+    height: auto;
+}
+.container-four-0-four{
+    display: block;
+    text-align: center;
+    color: #383838;
+}
+.btn_back a{
+    color: #e66612;
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zorro Rojo Store - Seller</title>
+    <link rel="icon" href="img/logo/isotipo.svg">
+    <link rel="stylesheet" href="css/seller.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body class="container">
+    <!-- Navegation-Bar -->
+    <nav class="navbar"></nav>
+    <div class="nav-search"></div>
+
+    <div class="loader">
+        <img src="img/comp/loading-78-unscreen.gif" alt="">
+    </div>
+
+    <div class="alert-box ">
+        <img src="img/comp/bxs-error.svg" class="alert-img" alt="">
+        <p class="alert-msg">Error message</p>
+    </div>
+
+    <img src="img/logo/isotipo-t.svg" class="logo" alt="ZorroRojoStore">
+
+    <div class="body">
+        <!-- Become seller -->
+        <div class="become-seller hide">
+            <p class="headding"> Se parte de Zorro Rojo Store</p>
+            <p class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis ipsa laborum saepe odio in,
+                ipsum beatae repellat dicta quas vero, itaque obcaecati magni libero. Delectus inventore architecto et
+                impedit accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus accusamus
+                debitis eum totam qui ut quod ea, adipisci accusantium recusandae doloremque, tempore iusto molestias
+                ex, labore tenetur excepturi explicabo eaque?
+                Doloremque ab totam ex porro exercitationem, doloribus soluta nihil, quo sed illo assumenda. Odio nobis
+                cum maxime libero, consequatur est, ea provident vel sunt dicta voluptatibus quasi quas, illo
+                perferendis.</p>
+            <div class="btn-contaier">
+                <button class="btn submit-btn" id="apply-btn">Aplicar</button>
+                <button class="btn back-btn" onclick="location.href='/'">Salir</button>
+            </div>
+        </div>
+
+        <!-- Apply form -->
+        <div class="apply-form hide">
+            <input type="text" id="business-name" placeholder="Nombre de negocio / compania">
+            <textarea id="business-add" placeholder="Direccion"></textarea>
+            <textarea id="about" placeholder="Acerca de..."></textarea>
+            <input type="text" id="number" placeholder="Numero">
+            <input type="checkbox" class="checkbox" id="terms-and-condition" checked>
+            <label for="terms-and-condition">Acepta nuestros <a href="/temsandConditions">terminos y condiciones.</a>
+            </label>
+            <br>
+            <input type="checkbox" class="checkbox" id="legitInfo">
+            <label for="legitInfo">Acepta la <a href="/legitInfo">informacion legal.</a> </label>
+            <br>
+            <div class="btn-contaier">
+                <button class="bnt submit-btn" id="apply-form-btn">Aplicar</button>
+                <button class="btn cancel-btn" id="cancel-btn">Cancelar</button>
+            </div>
+        </div>
+
+        <!-- Product list -->
+        <div class="navbar-admin">
+            <nav class="navbar-adm"> <!-- Nav menu -->
+                <div class="link-container">
+                    <button class="btn" onclick="location.href='/'">
+                        <i class='bx bxs-home-heart' ></i> <p class="txt-btn"> Inicio</p> </button>
+                    <button class="btn" id="add-product">
+                        <i class='bx bxs-package'></i> <p class="txt-btn"> Cosplays</p> </button>
+                    <button class="btn" id="add-booking">
+                        <i class='bx bxs-calendar' ></i> <p class="txt-btn"> Reservas</p> </button>
+                </div>
+            </nav>
+
+            <div class="add-product"> <!-- Products bar -->
+                <p class="add-product-text">Añadir nuevo producto</p>
+                <button class="btn btn-p" id="add-product-btn" onclick="location.href='/add-product'"> Agregar 
+                    <i class='bx bxs-add-to-queue'></i></button>
+                <button class="btn btn-b" id="add-product-btn" > Cambiar  
+                    <i class='bx bxs-calendar-edit'></i></button>
+            </div>
+
+        </div>
+
+
+        <div class="product-listing  "> <!-- seller page -->
+            <!-- Delete alert -->
+            <div class="delete-alert">
+                <div class="alert">
+                    <button class="close-btn">
+                        <img src="img/comp/bxs-x-square.svg" alt="">
+                    </button>
+                    <img src="img/comp/scrum-board-monochromatic.svg" class="delete-svg" alt="">
+                    <p class="text-del-element">Estas seguro de querer eliminar el producto?</p>
+                    <button class="delete-btn">Eliminar</button>
+                </div>
+            </div>
+
+            <!-- Card Products -->
+            <div class="product-container pages displace" id="product-page">
+                <img src="img/comp/logistics-isometric.svg" class="no-product-image hide" alt="">
+            </div>
+
+            <!-- Card Booking -->
+            <div class="booking-container pages " id="booking-page">
+                <div class="bar-sup"></div>
+                <img src="img/comp/empty-inbox-outline.svg" class="no-booking-image hide" alt="">
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Scripts -->
+    <!--script src="js/cart.js"></script-->
+    <script src="js/token.js"></script>
+    <script src="js/seller.js"></script>
+    <script src="js/createProduct.js"></script>
+    <script src="js/createMessage.js"></script>
+
+</body>
+
+</html>

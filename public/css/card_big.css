@@ -1,0 +1,26 @@
+@import'card_small.css';
+
+:root{
+    --color-wiht: #fff;
+    --color-w-splash: #efefef;
+    --color-base1: #161616;
+    --color-sub-base1: #f1f1f1;
+    --color-sub-base2: #e66612;
+}
+.product-card- {
+    flex: 0 0 auto;
+    width: 350px;
+    margin-right: 20px;
+    background: #fff;
+    border: 1px solid #d1d1d1;
+    padding-bottom: 15px;
+    transition: .3s;
+}
+.product-card-:hover{
+    box-shadow: 1px 1px 15px 1px #16161649;
+}
+
+.product-card- a{
+    text-decoration: none;
+    color: black;
+}

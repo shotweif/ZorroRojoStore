@@ -1,0 +1,64 @@
+@import 'addProduct.css';
+
+.product-info{
+    display: flex;
+    width: 100% !important;
+    min-height: auto;
+    margin-bottom: 20px;
+}
+.upload-image-sec, .select-sizes{
+    background: #f1f1f1;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100% !important;
+}
+.text, .text-min{
+    text-align: left;
+    margin-top: 8px;
+}
+.product-price{
+    margin-top: 40px;
+}
+.text-lin{
+    margin-bottom: 10px;
+}
+.Title{
+    margin: 20px 0;
+    text-align: center;
+}
+.size-checkbox{
+    width: 110px;
+}
+.box-booking-ctive{
+    width: 100%;
+    min-height: 50px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background: #f1f1f1;
+    display: flex;
+}
+.date-active{
+    width: 50%;
+}
+.center-line{
+    border-right: 1px solid #383838;
+}
+.date-active-list{
+    width: 100%;
+}
+
+.date-act-name, input[type='number'].date-act-name {
+    width: 100%;
+    height: auto;
+    padding: 10px 20px;
+    border-radius: 0;
+    border-bottom: 1px solid #383838;
+}
+
+input[type='number'].date-act-name {
+    min-width: auto;
+    box-shadow: none;
+    margin: 0;
+    padding: 11px 20px;
+    margin: 0;
+}

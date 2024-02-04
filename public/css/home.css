@@ -1,0 +1,231 @@
+@import 'nav&foot/nav.css';
+@import 'nav&foot/foot.css';
+@import 'nav&foot/scroll.css';
+@import 'card_big.css';
+
+:root{
+    --color-base1: #161616;
+    --color-sub-base1: #f1f1f1;
+    --color-sub-base2: #e66612;
+}
+
+body{
+    background: #f3f3f3;
+}
+.hero-section {
+    width: 100%;
+    height: calc(100vh - 76px);
+    background-image: url('../img/img-001.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    user-select: none;
+}
+.hero-section .logo {
+    height: 150px;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+}
+.hero-section .sub-heading {
+    margin-top: 10px;
+    text-align: center;
+    color: #fff;
+    /*text-transform: capitalize;*/
+    font-size: 35px;
+    font-weight: 300;
+}
+.red-line {
+    border-top: 6px solid var(--color-sub-base2);
+}
+/* Animation */
+.hero-section .content {
+    text-align: center;
+    animation-name: zoom-out;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+}
+@keyframes zoom-out {
+    from {
+      transform: scale(1.2);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+/*--- Promo banner ---*/
+.product-souvenir{
+    position: relative;
+    padding: 20px 80px;
+    width: 100%;
+    max-width: 100%;
+}
+.product-souvenir .product-category{
+    padding: 0 6vw;
+}
+.container-promotion{
+    position: relative;
+    overflow: hidden;
+    width: 100%; 
+    /*height: 50vh;*/
+    background-color: var(--color-sub-base2);
+    margin-bottom: 40px;
+    border-radius: 10px;
+    /*overflow: hidden;*/
+    box-shadow: 1px 1px 10px 1px #161616;
+}
+.img-products{
+    /*width: 100%;*/
+    /*position: absolute;
+    top: 50%;
+	left: 50%;
+    transform: translate(-50%, -50%);
+	width: 100%;*/
+    width: 100%;
+}
+
+/*--- Client ---*/
+.client{
+    position: relative;
+    padding: 20px 20%;
+    width: 100%;
+    max-width: 100%;
+}
+.back-img-client{
+    position: absolute;
+    background-image: url(https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(5px);
+    fill-opacity: .5;
+}
+.client .product-category{
+    position: relative;
+    text-align: center;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+}
+.client-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%; 
+    /*height: 40vh;*/
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+.profile {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 3rem;
+	width: 90%;
+	max-width: 300px;
+	background-color: var(--color-base1);
+	border-radius: 10px;
+	position: relative;
+	border: 3px solid transparent;
+    /*border: 2px solid var(--color-sub-base2);*/
+    margin-bottom: 15px;
+	background-clip: padding-box;
+	text-align: center;
+	color: #f1f3f3;
+}
+.profile-image {
+	border-radius: 50%;
+	overflow: hidden;
+	width: 200px;
+	height: 200px;
+	position: relative;
+    border: 2px solid var(--color-sub-base2);
+    pointer-events: none;
+    user-select: none;
+}
+.profile-image img{
+    position: absolute;
+    top: 50%;
+	left: 50%;
+    transform: translate(-50%, -50%);
+	width: 100%;
+}
+.profile-username {
+	font-size: 1.5rem;
+	font-weight: 600;
+	margin-top: 1.5rem;
+}
+.profile-user-handle {
+	color: #7d8396;
+}
+.profile-links {
+    display: flex;
+	margin-top: 1.5rem;
+    padding: 1rem;
+    border-top: 4px solid var(--color-sub-base2);
+}
+
+.link {
+	text-decoration: none;
+	color: #7d8396;
+	margin-left: 0.375rem;
+	margin-right: 0.375rem;
+}
+/*---------------------------------*/
+        /*--- Resolution ---*/
+/*---------------------------------*/
+
+/* BREAKPOINT */
+@media (max-width: 1549px){
+    .client{
+        padding: 20px 15%;
+    }
+}
+@media (max-width: 1400px){
+    .client{
+        padding: 20px 10%;
+    }
+}
+@media (max-width: 1124px){
+    .profile{
+        max-width: 450px;
+    }
+    .product-souvenir{
+        padding: 20px 20px;
+    }
+}
+@media (max-width: 910px){
+    .hero-section .sub-heading {
+        font-size: 30px;
+    }
+    
+}
+@media (max-width: 685px){
+    .hero-section .logo {
+        height: 125px;
+    }
+    .hero-section .sub-heading {
+        font-size: 25px;
+    }
+    
+}
+@media (max-width: 495px){
+    .hero-section .sub-heading {
+        font-size: 16px;
+    }
+}
+@media (max-width: 400px){
+    .hero-section {
+        background-image: url('../img/sazu-su.jpg');
+
+    }
+}
+
+
