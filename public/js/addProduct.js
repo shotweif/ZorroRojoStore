@@ -80,12 +80,12 @@ let imagePath = [];
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyDaaU_spqn2myGLuTN6yH_bl0lndCj-jjg",
-    authDomain: "zorrorojos.firebaseapp.com",
-    projectId: "zorrorojos",
-    storageBucket: "zorrorojos.appspot.com",
-    messagingSenderId: "566643381330",
-    appId: "1:566643381330:web:3330b8fb779da19eb43b8b"
+    apiKey: "xxxx",
+    authDomain: "xxxx",
+    projectId: "xxxx",
+    storageBucket: "xxxx.com",
+    messagingSenderId: "xxxx",
+    appId: "xxxx"
 };
 
 // Initialize Firebase
